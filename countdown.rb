@@ -1,9 +1,18 @@
 #write your code here
-
-def countdown(counter)
-  while counter < 20
-    puts "The current number is less than 20."
-    counter += 1
+def countdown(number)
+  while number > 0
+    puts "#{number} SECOND(S)!"
+    number -= 1
   end
+  return "HAPPY NEW YEAR!"
 end
-countdown(12)
+
+def countdown_with_sleep(number)
+  while number > 0
+    puts "#{number} SECOND(S)!"
+    number -= 1
+    sleep(1)
+  end
+  return "HAPPY NEW YEAR!"
+end
+countdown_with_sleep(12)
