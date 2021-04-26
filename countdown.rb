@@ -4,11 +4,11 @@
 #Once loop ends, the method should return "HAPPY NEW YEAR!"
 
 #pass in X as an argument, this will be a number
-def countdown(seconds)
+def countdown(second)
   #start the counter at 10 seconds
-  while seconds > 0
-    puts "#{seconds} SECOND(S)!"
-      seconds -= 1
+  while second > 0
+    puts "#{second} SECOND(S)!"
+      second -= 1
       #whenver you have a loop and add return statement, this will stop the loop
   end
   return "HAPPY NEW YEAR!"
