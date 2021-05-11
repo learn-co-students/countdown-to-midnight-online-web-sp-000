@@ -1,16 +1,18 @@
 #write your code here
 
 def countdown(integer)
-  while integer == 12
-    puts "HAPPY NEW YEAR!"
-    integer -= 1
-  end
   while integer > 0
     puts "#{integer} SECOND(S)!"
     integer -= 1
   end
-  while integer == 0
-    puts "HAPPY NEW YEAR!"
-  end
+  return "HAPPY NEW YEAR!"
 end
       #sleep(num_secs)
+def countdown_with_sleep(integer)
+  while integer > 0
+    puts "#{integer} SECOND(S)!"
+    integer -= 1
+    sleep(1)
+  end
+  return "HAPPY NEW YEAR!"
+end
